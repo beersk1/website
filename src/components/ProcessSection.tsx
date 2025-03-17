@@ -12,7 +12,7 @@ const steps = [
   {
     number: '02',
     title: 'Inspection',
-    description: 'We carefully assess your helmet's condition, identifying areas needing special attention.',
+    description: "We carefully assess your helmet's condition, identifying areas needing special attention.",
     imageUrl: 'https://images.unsplash.com/photo-1570655652364-2e0a67455ac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
   {
