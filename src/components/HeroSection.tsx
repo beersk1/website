@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowRight, SparklesIcon } from 'lucide-react';
+import { ArrowRight, WhatsappIcon } from 'lucide-react';
 
 const HeroSection = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -43,7 +43,12 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2 space-y-6">
             <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightBlue text-brand-blue font-medium mb-2 animate-fadeIn">
-              <SparklesIcon className="h-4 w-4 mr-1" />
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 3v3m6-3v3M6 3v3M3 9h18M3 11v6c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-6"></path>
+                <path d="M16 13H8"></path>
+                <path d="M16 17H8"></path>
+                <path d="M10 9H8"></path>
+              </svg>
               Professional Helmet Cleaning
             </div>
             
@@ -57,12 +62,18 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fadeIn animate-delay-300">
-              <a href="#contact" className="btn-primary inline-flex items-center justify-center group">
-                Schedule Service
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <a href="#contact" className="btn-primary inline-flex items-center justify-center">
+                Contact Us
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
-              <a href="#process" className="btn-secondary">
-                How It Works
+              <a 
+                href="https://wa.me/yourphonenumber" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-secondary inline-flex items-center justify-center"
+              >
+                <WhatsappIcon className="mr-2 h-5 w-5 text-green-600" />
+                WhatsApp Us
               </a>
             </div>
           </div>
@@ -78,21 +89,6 @@ const HeroSection = () => {
                   style={{ aspectRatio: '4/3' }}
                   loading="lazy"
                 />
-              </div>
-              <div className="glass-card absolute -bottom-10 -left-10 p-4 rounded-xl shadow-lg animate-fadeIn animate-delay-400 hidden md:block">
-                <div className="flex items-center space-x-3">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3].map((i) => (
-                      <div key={i} className="w-8 h-8 rounded-full bg-brand-blue/10 flex items-center justify-center border-2 border-white">
-                        <span className="text-xs font-medium text-brand-blue">✓</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="text-sm font-medium">
-                    <p className="text-brand-dark">100% Satisfaction</p>
-                    <p className="text-gray-500 text-xs">Trusted by professionals</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
