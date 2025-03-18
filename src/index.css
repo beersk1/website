@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 100% 40%;
+    --primary: 355 83% 57%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -91,12 +91,12 @@
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-brand-blue to-brand-darkBlue text-white px-6 py-3 rounded-md font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1;
+    @apply bg-gradient-to-r from-brand-red to-brand-red/80 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1;
     background-size: 200% auto;
   }
   
   .btn-secondary {
-    @apply bg-white bg-opacity-80 backdrop-blur-sm border border-gray-200 text-brand-dark px-6 py-3 rounded-md font-medium transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-1;
+    @apply bg-white bg-opacity-80 backdrop-blur-sm border border-gray-200 text-brand-black px-6 py-3 rounded-md font-medium transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-1;
   }
   
   .section {

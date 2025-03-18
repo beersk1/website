@@ -64,11 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#0EA5E9',
-					lightBlue: '#E0F2FE',
-					darkBlue: '#0369A1',
-					gray: '#F1F5F9',
-					dark: '#0F172A'
+					red: '#ea384c',
+					lightRed: '#ffebee',
+					black: '#000000e6',
+					gray: '#8E9196',
+					dark: '#0F172A',
+					light: '#F1F5F9'
 				}
 			},
 			borderRadius: {
@@ -120,7 +121,7 @@ export default {
 				display: ['SF Pro Display', 'Inter', 'sans-serif']
 			},
 			backgroundImage: {
-				'hero-pattern': 'linear-gradient(to right, #0EA5E9, #38BDF8)',
+				'hero-pattern': 'linear-gradient(to right, #ea384c, #ff6b6b)',
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'glass-gradient': 'linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)'
 			}
