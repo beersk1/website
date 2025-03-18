@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, ShieldCheckIcon, SparklesIcon, TimerIcon } from 'lucide-react';
+import { ShieldCheckIcon, SparklesIcon, TimerIcon } from 'lucide-react';
 
 const features = [
   {
@@ -43,11 +43,7 @@ const FeatureSection = () => {
                 {feature.icon}
               </div>
               <h3 className="text-xl font-bold text-brand-dark mb-3">{feature.title}</h3>
-              <p className="text-gray-600 mb-6">{feature.description}</p>
-              <a href="#" className="text-brand-blue font-medium inline-flex items-center hover:underline">
-                Learn more
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>
