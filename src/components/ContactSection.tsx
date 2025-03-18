@@ -15,7 +15,7 @@ const ContactSection = () => {
       <div className="container mx-auto">
         <div className="glass-card rounded-2xl overflow-hidden shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="p-6 md:p-10 bg-gradient-to-br from-brand-blue to-brand-darkBlue text-white">
+            <div className="p-6 md:p-10 bg-gradient-to-br from-brand-red to-brand-red/80 text-white">
               <div className="max-w-md">
                 <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
                 <p className="text-white/80 mb-8">
@@ -118,7 +118,7 @@ const ContactSection = () => {
                 
                 <button
                   type="submit"
-                  className="btn-primary w-full flex items-center justify-center"
+                  className="bg-brand-red hover:bg-brand-red/90 text-white w-full flex items-center justify-center px-6 py-3 rounded-md font-medium transition-all duration-300 shadow-md"
                 >
                   Send Message
                   <Send className="ml-2 h-4 w-4" />
