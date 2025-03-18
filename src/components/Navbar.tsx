@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { ShieldCheckIcon, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,8 +32,12 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2">
-          <ShieldCheckIcon className="h-8 w-8 text-brand-blue" />
-          <span className="font-display font-bold text-xl text-brand-dark">
+          <img 
+            src="/logo.svg" 
+            alt="HelmetShine Logo" 
+            className="h-10 w-auto" 
+          />
+          <span className="font-display font-bold text-xl text-brand-black">
             HelmetShine
           </span>
         </a>
@@ -42,19 +46,19 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a
             href="#features"
-            className="text-brand-dark/80 hover:text-brand-blue transition-colors"
+            className="text-brand-black/80 hover:text-brand-red transition-colors"
           >
             Features
           </a>
           <a
             href="#process"
-            className="text-brand-dark/80 hover:text-brand-blue transition-colors"
+            className="text-brand-black/80 hover:text-brand-red transition-colors"
           >
             How It Works
           </a>
           <a
             href="#testimonials"
-            className="text-brand-dark/80 hover:text-brand-blue transition-colors"
+            className="text-brand-black/80 hover:text-brand-red transition-colors"
           >
             Testimonials
           </a>
@@ -68,7 +72,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-brand-dark"
+          className="md:hidden text-brand-black"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -81,21 +85,21 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-4">
             <a
               href="#features"
-              className="text-brand-dark/80 hover:text-brand-blue transition-colors py-2"
+              className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </a>
             <a
               href="#process"
-              className="text-brand-dark/80 hover:text-brand-blue transition-colors py-2"
+              className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               How It Works
             </a>
             <a
               href="#testimonials"
-              className="text-brand-dark/80 hover:text-brand-blue transition-colors py-2"
+              className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Testimonials

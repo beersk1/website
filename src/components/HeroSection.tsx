@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowRight, MessageSquare } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -31,18 +31,18 @@ const HeroSection = () => {
       style={{ 
         '--x': '0.5', 
         '--y': '0.5',
-        background: 'radial-gradient(circle at calc(var(--x) * 100%) calc(var(--y) * 100%), rgba(224, 242, 254, 0.5), rgba(255, 255, 255, 0) 40%)'
+        background: 'radial-gradient(circle at calc(var(--x) * 100%) calc(var(--y) * 100%), rgba(255, 235, 238, 0.5), rgba(255, 255, 255, 0) 40%)'
       } as React.CSSProperties}
     >
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-blue opacity-10 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-brand-lightBlue opacity-30 rounded-full filter blur-2xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-red opacity-10 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-brand-lightRed opacity-30 rounded-full filter blur-2xl"></div>
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2 space-y-6">
-            <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightBlue text-brand-blue font-medium mb-2 animate-fadeIn">
+            <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2 animate-fadeIn">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 3v3m6-3v3M6 3v3M3 9h18M3 11v6c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-6"></path>
                 <path d="M16 13H8"></path>
@@ -52,12 +52,12 @@ const HeroSection = () => {
               Professional Helmet Cleaning
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-brand-dark animate-fadeIn animate-delay-100">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-brand-black animate-fadeIn animate-delay-100">
               Keep Your Helmet 
-              <span className="block text-brand-blue">Pristine & Protected</span>
+              <span className="block text-brand-red">Pristine & Protected</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl animate-fadeIn animate-delay-200">
+            <p className="text-lg md:text-xl text-brand-gray max-w-xl animate-fadeIn animate-delay-200">
               Professional cleaning solutions tailored specifically for all types of helmets. Restore shine, eliminate odors, and extend the life of your protective gear.
             </p>
             
@@ -84,7 +84,7 @@ const HeroSection = () => {
           
           <div className="w-full lg:w-1/2 relative">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-radial from-brand-lightBlue/30 to-transparent rounded-full blur-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-radial from-brand-lightRed/30 to-transparent rounded-full blur-2xl"></div>
               <div className="glass-card p-4 rounded-2xl overflow-hidden shadow-xl animate-float">
                 <img 
                   src="https://images.unsplash.com/photo-1591190269445-b8fcfea8ded9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
