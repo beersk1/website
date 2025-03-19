@@ -2,6 +2,10 @@
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
+import FactsSection from '@/components/FactsSection';
+import ProblemSection from '@/components/ProblemSection';
+import SolutionSection from '@/components/SolutionSection';
 import FeatureSection from '@/components/FeatureSection';
 import ProcessSection from '@/components/ProcessSection';
 import MissionVisionSection from '@/components/MissionVisionSection';
@@ -41,6 +45,10 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
+      <ServicesSection />
+      <FactsSection />
+      <ProblemSection />
+      <SolutionSection />
       <FeatureSection />
       <ProcessSection />
       <MissionVisionSection />

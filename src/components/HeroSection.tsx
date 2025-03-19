@@ -53,12 +53,12 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-brand-black animate-fadeIn animate-delay-100">
-              Keep Your Helmet 
-              <span className="block text-brand-red">Pristine & Protected</span>
+              India's First Advanced
+              <span className="block text-brand-red">Helmet Cleaning Service</span>
             </h1>
             
             <p className="text-lg md:text-xl text-brand-gray max-w-xl animate-fadeIn animate-delay-200">
-              Professional cleaning solutions tailored specifically for all types of helmets. Restore shine, eliminate odors, and extend the life of your protective gear.
+              Your helmet is dirtier than you think—packed with sweat, bacteria, and odors. Our advanced cleaning service uses cutting-edge technology to sterilize, deodorize, and restore freshness, along with exterior cleaning & polishing for a spotless finish.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fadeIn animate-delay-300">
