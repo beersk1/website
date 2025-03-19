@@ -45,22 +45,28 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a
-            href="#features"
+            href="#services"
             className="text-brand-black/80 hover:text-brand-red transition-colors"
           >
-            Features
+            Our Services
           </a>
           <a
-            href="#process"
+            href="#solution"
             className="text-brand-black/80 hover:text-brand-red transition-colors"
           >
-            How It Works
+            Our Solution
           </a>
           <a
-            href="#testimonials"
+            href="#about"
             className="text-brand-black/80 hover:text-brand-red transition-colors"
           >
-            Testimonials
+            Mission
+          </a>
+          <a
+            href="#faq"
+            className="text-brand-black/80 hover:text-brand-red transition-colors"
+          >
+            FAQ
           </a>
           <a
             href="#contact"
@@ -84,25 +90,32 @@ const Navbar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg p-6 animate-fadeIn">
           <nav className="flex flex-col space-y-4">
             <a
-              href="#features"
+              href="#services"
               className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Features
+              Our Services
             </a>
             <a
-              href="#process"
+              href="#solution"
               className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              How It Works
+              Our Solution
             </a>
             <a
-              href="#testimonials"
+              href="#about"
               className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Testimonials
+              Mission
+            </a>
+            <a
+              href="#faq"
+              className="text-brand-black/80 hover:text-brand-red transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              FAQ
             </a>
             <a
               href="#contact"
