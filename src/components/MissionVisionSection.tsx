@@ -5,7 +5,7 @@ const MissionVisionSection = () => {
   return (
     <section id="about" className="section bg-gray-50">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2">
             About Us
           </div>

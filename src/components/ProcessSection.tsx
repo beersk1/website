@@ -38,7 +38,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="section relative py-10 md:py-14">
+    <section id="process" className="section relative py-8 md:py-12">
       <div className="absolute inset-0 bg-gray-50 clip-diagonal"></div>
       
       <div className="container mx-auto relative z-10">

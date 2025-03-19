@@ -29,7 +29,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="section relative">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2">
             Our Services
           </div>
