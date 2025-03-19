@@ -38,7 +38,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="section relative py-8 md:py-12">
+    <section id="process" className="section relative py-6 md:py-10">
       <div className="absolute inset-0 bg-gray-50 clip-diagonal"></div>
       
       <div className="container mx-auto relative z-10">
@@ -46,7 +46,7 @@ const ProcessSection = () => {
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2">
             Our Process
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-3">
             How We Work
           </h2>
           <p className="text-brand-gray">

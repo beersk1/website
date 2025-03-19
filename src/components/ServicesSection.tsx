@@ -27,13 +27,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="section relative">
+    <section id="services" className="section relative py-8">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2">
             Our Services
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-3">
             We Provide
           </h2>
           <p className="text-gray-600 text-lg">
@@ -41,15 +41,15 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="glass-card rounded-xl p-6 shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105">
-              <div className="h-16 w-16 rounded-full bg-brand-red/10 flex items-center justify-center mb-6">
+            <div key={index} className="glass-card rounded-xl p-5 shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105">
+              <div className="h-16 w-16 rounded-full bg-brand-red/10 flex items-center justify-center mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold text-brand-dark mb-2">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
-              <div className="mt-4 text-brand-red">
+              <div className="mt-3 text-brand-red">
                 <CheckCircle2 className="h-6 w-6 mx-auto" />
               </div>
             </div>

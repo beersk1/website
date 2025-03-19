@@ -99,7 +99,7 @@
   }
   
   .section {
-    @apply py-12 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden;
+    @apply py-8 md:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden;
   }
   
   .animate-delay-100 {

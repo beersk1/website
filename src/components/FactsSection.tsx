@@ -27,13 +27,13 @@ const facts = [
 
 const FactsSection = () => {
   return (
-    <section id="facts" className="section bg-gray-50 clip-diagonal">
+    <section id="facts" className="section bg-gray-50 clip-diagonal py-8">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2">
             The Facts
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-3">
             Shocking Helmet Hygiene Facts
           </h2>
           <p className="text-gray-600 text-lg">
@@ -43,13 +43,13 @@ const FactsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {facts.map((fact, index) => (
-            <div key={index} className="glass-card rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div key={index} className="glass-card rounded-xl p-5 hover:shadow-lg transition-shadow">
               <div className="flex items-start">
                 <div className="mr-4 mt-1 rounded-full bg-brand-red/10 p-2">
                   {fact.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-brand-dark mb-2">{fact.title}</h3>
+                  <h3 className="text-lg font-bold text-brand-dark mb-1">{fact.title}</h3>
                   <p className="text-gray-600 text-sm">{fact.description}</p>
                 </div>
               </div>

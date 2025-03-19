@@ -18,7 +18,7 @@ const Index = () => {
     // Initialize animations for elements as they appear in viewport
     const observerOptions = {
       root: null,
-      rootMargin: '-20px',  // Changed from '0px' to '-20px' to trigger animation a bit later
+      rootMargin: '-30px',  // Changed from '-20px' to '-30px' to trigger animation a bit later
       threshold: 0.1
     };
 
