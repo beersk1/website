@@ -1,7 +1,6 @@
-
-import React, { useState, useEffect } from 'react';
-import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,28 +16,26 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-10',
-        isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm'
-          : 'bg-transparent'
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-10",
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-center space-x-2">
-          <img 
-            src="/logo.svg" 
-            alt="HelmetShine Logo" 
-            className="h-10 w-auto" 
+        <a href="#" className="flex items-center space-x-2 ">
+          <img
+            src="/Images/FinalLogo (1).png"
+            alt="FreshNClean Helmet Logo"
+            className="h-12 w-auto"
           />
           <span className="font-display font-bold text-xl text-brand-black">
-            HelmetShine
+            Clean N Fresh Helmet
           </span>
         </a>
 
@@ -68,10 +65,7 @@ const Navbar = () => {
           >
             FAQ
           </a>
-          <a
-            href="#contact"
-            className="btn-primary inline-flex items-center"
-          >
+          <a href="#contact" className="btn-primary inline-flex items-center">
             Get Started
           </a>
         </nav>

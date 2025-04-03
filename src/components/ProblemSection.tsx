@@ -1,31 +1,33 @@
-
-import React from 'react';
-import { Droplets, FlaskConical, ThumbsDown } from 'lucide-react';
+import React from "react";
+import { Droplets, FlaskConical, ThumbsDown } from "lucide-react";
 
 const problems = [
   {
     icon: <Droplets className="h-12 w-12 text-brand-red" />,
     title: "Water Damage",
-    description: "Water cleaning weakens the helmet's foam, affecting its safety in case of impact.",
-    imageSrc: "https://images.unsplash.com/photo-1600267204091-5c1ab8b10c02?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    description:
+      "Water cleaning weakens the helmet's foam, affecting its safety in case of impact.",
+    imageSrc: "/Images/rsz_1helmet_foam.jpg",
   },
   {
     icon: <FlaskConical className="h-12 w-12 text-brand-red" />,
     title: "Harsh Chemicals",
-    description: "Some cleaning chemicals cause skin irritation and damage helmet materials.",
-    imageSrc: "https://images.unsplash.com/photo-1615658629900-1dad9a1e3e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    description:
+      "Some cleaning chemicals cause skin irritation and damage helmet materials.",
+    imageSrc: "/Images/Harsh_Chemicals.jpg",
   },
   {
     icon: <ThumbsDown className="h-12 w-12 text-brand-red" />,
     title: "Poor Cleaning Practices",
-    description: "Helmets are rarely cleaned properly, leading to bad odors, acne, and hygiene issues.",
-    imageSrc: "https://images.unsplash.com/photo-1612385164707-097bbe4c0b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  }
+    description:
+      "Helmets are rarely cleaned properly, leading to bad odors, acne, and hygiene issues.",
+    imageSrc: "/Images/Poor_cleaning.jpg",
+  },
 ];
 
 const ProblemSection = () => {
   return (
-    <section id="problem" className="section py-8">
+    <section id="problem" className="section py-8 mb-4">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm bg-brand-lightRed text-brand-red font-medium mb-2">
@@ -41,11 +43,14 @@ const ProblemSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {problems.map((problem, index) => (
-            <div key={index} className="glass-card rounded-xl overflow-hidden shadow-lg">
+            <div
+              key={index}
+              className="glass-card rounded-xl overflow-hidden shadow-lg"
+            >
               <div className="h-44 overflow-hidden">
-                <img 
-                  src={problem.imageSrc} 
-                  alt={problem.title} 
+                <img
+                  src={problem.imageSrc}
+                  alt={problem.title}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -54,8 +59,12 @@ const ProblemSection = () => {
                 <div className="h-14 w-14 rounded-full bg-brand-red/10 flex items-center justify-center mb-3 -mt-10 border-4 border-white mx-auto">
                   {problem.icon}
                 </div>
-                <h3 className="text-xl font-bold text-brand-dark mb-2 text-center">{problem.title}</h3>
-                <p className="text-gray-600 text-center">{problem.description}</p>
+                <h3 className="text-xl font-bold text-brand-dark mb-2 text-center">
+                  {problem.title}
+                </h3>
+                <p className="text-gray-600 text-center">
+                  {problem.description}
+                </p>
               </div>
             </div>
           ))}
